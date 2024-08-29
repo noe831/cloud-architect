@@ -1,0 +1,83 @@
+A Tour of Google Cloud Hands-on Labs
+GSP282
+
+Google Cloud is a comprehensive suite of cloud services provided by Google, covering areas such as computing, storage, data analytics, machine learning, and networking. Google Cloud Skills Boost offers a range of labs and courses to help users build cloud skills, track progress, and earn badges, with Qwiklabs serving as the platform for these resources. This introductory lab focuses on familiarizing users with the Google Cloud Console, teaching the basics of Google Cloud features and the lab environment. It's ideal for those new to cloud computing or looking to understand Google Cloud and Qwiklabs better.
+
+Objectives:
+	- Navigate and identify key features of the lab platform.
+	- Access the Cloud Console using specific credentials.
+	- Understand Google Cloud projects and common misconceptions about them.
+	- Use the Google Cloud Navigation menu to explore various services.
+	- Explore basic roles and use the Cloud IAM service to view user actions.
+	- Examine the API library and its main features.
+
+Prerequisites:
+This introductory lab is ideal for those new to Google Cloud. If you are already familiar with the Cloud Console, you might consider starting with labs on Cloud Shell and gcloud or creating a virtual machine instead. To avoid issues with credentials, sign out of any personal or corporate Google Cloud accounts before starting the lab, and if using a Pixelbook, run the lab in an Incognito window.
+
+Lab Fundamentals:
+All Google Cloud labs share a similar interface, with key features including:
+	- Start Lab Button: Initiates a temporary Google Cloud environment with necessary services and credentials, and starts a countdown timer.
+	- Credit: Represents the cost of the lab, typically 1 Credit = 1 USD, though some introductory labs are free.
+	- Time: Indicates the duration you have to complete the lab before the environment and resources are deleted. Ensure to focus on the lab to avoid losing progress.
+	- Score: Tracks your completion of the lab's steps; you need to follow all steps in order to receive credit.
+	- Paying for a Lab: Some labs require payment. You'll choose to start the lab with an access code or credits, or buy credits if needed.
+	- Reading Instructions: Instructions are in one browser tab, while the Google Cloud console opens in another. You may need to switch tabs or use multiple monitors.
+
+Test your understanding
+	- Start Lab: This builds a temporary environment in Google Cloud.
+	- When the timer reaches 00:00:00, you will lose access to your temporary Google Cloud environment.
+	- Some labs have tracking, which scores your completion of hands-on lab activities.
+
+Task 1. Accessing the Cloud Console
+To start your lab:
+1. Click "Start Lab": Wait for the environment to set up. Once the timer starts and the button changes to "End Lab," you're ready to log in.
+2. Do Not Click "End Lab" Early: Clicking this button before finishing will invalidate your credentials and prevent you from accessing your work.
+3. Lab Details Pane: Once your lab is running, check the Lab details pane on the left for:
+	- Open Google Cloud Console Button: Opens the Cloud Console where you'll do most of your work.
+	- Project ID: A unique identifier for your Google Cloud resources.
+	- Username and Password: Temporary credentials for accessing Google Cloud during the lab.
+4. Sign In:
+	- Click "Open Google Console" to go to the sign-in page.
+	- Use the lab-provided username (e.g., googlexxxxxx_student@qwiklabs.net) and password.
+	- Accept Google's terms of service to access the Cloud Console.
+Ensure to use the provided student credentials and not your personal or company email. After signing in, you’ll be ready to begin the lab tasks.
+
+Test your understanding
+	- System admin: is not found in the left pane
+	- The username in the left panel, which resembles googlexxxxxx_student@qwiklabs.net, is a Cloud IAM identity.
+
+Task 2. Projects in the Cloud console
+A Google Cloud project organizes your resources, like virtual machines and databases, and includes settings and permissions. Each project has a name, number, and ID used when interacting with Google Cloud services. You might have access to multiple projects in different labs. To view all projects, click the drop-down menu in the console title bar and select "All," noting that "Qwiklabs Resources" is a shared project with read-only access. This project contains files and datasets for labs but cannot be modified. Your current project is temporary and will be deleted after the lab ends. Start each new lab with a new project specific to that lab's tasks.
+
+All products: https://cloud.google.com/products
+
+Test your understanding
+	- Google Cloud Project: An organizing entity for anything you build with Google Cloud
+	- Qwiklabs Resources is shared (read only) with all Qwiklabs users, which means that you cannot delete or modify it.
+	- False: Qwiklabs Resources is the project where you run all of your lab steps.
+
+Task 3. Roles and permissions
+Google Cloud uses Cloud IAM to manage permissions and roles for resource access. To view roles and permissions, go to IAM & Admin > IAM in the Navigation menu. Locate your "@qwiklabs" username to see its roles—typically, "Editor" for basic permissions, allowing modification of resources but not member management. Basic roles include:
+	- Viewer: Read-only access.
+	- Editor: Modify resources.
+	- Owner: Manage roles, permissions, and billing.
+
+Test your understanding
+	- Navigation menu: Offers quick access to the platform's services and also outlines its offerings.
+	- Basic roles set project-level permissions and, unless otherwise specified, control access and management to all Google Cloud services.
+	- Edior role: Provides all viewer permissions, plus permissions for actions that modify state, such as changing existing resources.
+
+Task 4. APIs and services
+Google Cloud APIs, covering over 200 areas from business to machine learning, are essential for integrating with Google Cloud projects and applications. APIs can be accessed directly or via client libraries, following resource-oriented design principles. Labs often automatically enable necessary APIs for you, but you'll need to enable them manually for personal projects. Most APIs offer detailed usage metrics, such as traffic, error rates, and latencies, to help troubleshoot issues with applications using Google services.
+
+Diagflow: https://developers.google.com/apis-explorer/#p/dialogflow/v3/
+API directory: https://developers.google.com/apis-explorer/#p/
+
+Test your understanding
+	- False: When you start a lab, you need to enable APIs in your project to start working with Google Cloud.
+
+Task 5. Ending your lab
+Click "End Lab" and "Submit" to finish. Rate the lab and leave feedback, as Google appreciates your input. Ending the lab revokes access to the project and your work. You will be signed out of the Cloud console, so you can close that tab.
+
+Recap:
+In this lab, you gained a solid understanding of the Cloud console, including projects, roles, and services. You practiced using Cloud IAM and API libraries, and you're now prepared for more labs.
